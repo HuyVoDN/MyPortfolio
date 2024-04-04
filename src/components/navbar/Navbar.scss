@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.main-navbar {
+    position: sticky;
+    top: 0;
+    height: 75px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-inline: 10px;
+    padding-block: 5px;
+    z-index: 1000;
+    //background-color: rgb(0, 0, 0);
+
+    .icon{
+        font-size: 2.5rem;
+        margin-left: 15px;
+        color: white; 
+    }
+
+    .main-navbar-right{
+        display:flex;
+
+        .navbar-links{
+            display:flex;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 0.6px;
+            font-weight: 300;
+            margin-right: 10px;
+            
+            .link{
+                color:azure;
+                transition: color 0.3s ease-in-out;
+                .link-btn{
+                    color:azure;
+                    background-color: rgb(78, 78, 78);
+                    outline:0;
+                    border-radius: 5px;
+                    box-shadow: 5px -2px 3px 1px rgba(180, 180, 180, 0.699);
+                    margin: 10px;
+                    padding: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.1s ease-in-out;
+                    
+                }
+            
+                .link-btn:hover{
+                    background-color: rgba(190, 190, 190, 0.144);
+                    color:rgb(173, 173, 173);
+                    box-shadow: 0px 0px 3px 1px rgba(180, 180, 180, 0.699);
+                }
+             }
+               
+             .link.active .link-btn{
+                background-color: rgba(155, 155, 155, 0.877);
+                color:rgb(0, 0, 0);
+                box-shadow: 5px 5px 3px 1px rgba(109, 109, 109, 0.699);
+            }
+             .link:hover{
+                color:rgb(167, 167, 167);
+             }
+
+            
+        }
+    }
+    .dark-light-toggle{
+        
+        .switch-btn{
+            position: relative;
+            display: inline-block;
+            width: 6rem;
+            height: 6rem;
+            //margin: 10px;
+            padding: 1.2rem;
+            border-radius: 50%;
+            transition: background-color 0.3s ease-in-out;
+
+            &:hover{
+                background-color: rgba(190, 190, 190, 0.144);
+            }
+            
+        }
+        
+    }
+
+
+}
