@@ -1,6 +1,9 @@
 const Education = () => {
   return (
-    <div>Education</div>
+    <div>
+      Education
+      <p> Work in Progress...</p>
+      </div>
   )
 }
 

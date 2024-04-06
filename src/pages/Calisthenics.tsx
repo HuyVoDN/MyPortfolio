@@ -1,6 +1,9 @@
 const Calisthenics = () => {
   return (
-    <div>Calisthenics</div>
+    <div>
+      Calisthenics
+      <p> Work in Progress...</p>
+      </div>
   )
 }
 

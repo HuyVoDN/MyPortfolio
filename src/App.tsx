@@ -6,7 +6,7 @@ import Projects from './pages/Projects';
 import Education from './pages/Education';
 import Skills from './pages/Skills';
 import Calisthenics from './pages/Calisthenics';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 
 const Layout = () => {
   return (
@@ -51,7 +51,6 @@ const router = createBrowserRouter([
     ]
   }
 ]);
-
 
 function App() {
   

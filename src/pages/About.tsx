@@ -1,7 +1,11 @@
 
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      About
+      <p> Work in Progress...</p>
+      </div>
+    
   )
 }
 
