@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import './Navbar.scss';
 const Navbar = () => {
 
-  const [isDarkMode, setIsDarkMode] = useState(() => false);
+  const [isDarkMode, setIsDarkMode] = useState(() => true);
   const toggleDarkMode = (checked: boolean) => { setIsDarkMode(checked) };
   return (
     <div className="main-navbar">

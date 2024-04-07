@@ -3,17 +3,16 @@
 .main-navbar {
     position:sticky;
     top: 0;
-    height: 75px;
+    height: 8rem;
     display:flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-inline: 10px;
-    padding-block: 5px;
     z-index: 10;
     margin: auto;
-    
-    // background-color: rgb(0, 0, 0);
+    padding-inline: 10px;
+    padding-block:5px;
+    box-sizing: border-box;
 
     .icon{
         font-size: 2.5rem;
@@ -82,7 +81,7 @@
             transition: background-color 0.3s ease-in-out;
 
             &:hover{
-                background-color: rgba(190, 190, 190, 0.144);
+                background-color: rgba(197, 197, 197, 0.13);
             }
             
         }

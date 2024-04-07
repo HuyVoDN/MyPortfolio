@@ -28,8 +28,8 @@ const Home = () => {
     { name: 'MySQL', img: MySQLImg }
   ];
   return (
-    <div className='container'>
-      <div className='center' >
+    <div className='home'>
+      <div className='container' >
         <Grid2 className='description'>
           <Typography variant='h4' className="name" >Hello there! My name is</Typography>
           <Typography variant='h1' className="name" style={{ fontFamily: "cursive", fontStyle: "italic", paddingBottom: "2.5rem" }}>Huy Vo</Typography>

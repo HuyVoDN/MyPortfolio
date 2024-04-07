@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
-import './App.css';
-import About from './pages/About';
+import './App.scss';
+import About from './pages/About/About';
 import Projects from './pages/Projects';
 import Education from './pages/Education';
 import Skills from './pages/Skills';
@@ -11,41 +11,41 @@ import Home from './pages/Home/Home';
 const Layout = () => {
   return (
     <>
-    <Navbar/>
-    <Outlet/>
+      <Navbar />
+      <Outlet />
     </>
   );
 
 };
 const router = createBrowserRouter([
   {
-    path : "/",
-    element : <Layout/>,
-    children : [
+    path: "/",
+    element: <Layout />,
+    children: [
       {
         path: "/",
-        element: <Home/>
+        element: <Home />
       },
       {
         path: "/about",
-        element: <About/>
+        element: <About />
       },
       {
         path: "/projects",
-        element: <Projects/>
+        element: <Projects />
       },
       {
         path: "/education",
-        element: <Education/>
+        element: <Education />
       },
       {
-        path:"/skills",
-        element: <Skills/>
+        path: "/skills",
+        element: <Skills />
       },
 
       {
-        path:"/calisthenics",
-        element: <Calisthenics/>
+        path: "/calisthenics",
+        element: <Calisthenics />
       }
 
     ]
@@ -53,9 +53,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  
+
   return (
-    <RouterProvider router={router}/>
+    <div className='app'>
+      <div className='container'>
+        <RouterProvider router={router} />
+      </div>
+    </div>
   )
 }
 
