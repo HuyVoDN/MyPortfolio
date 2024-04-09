@@ -9,12 +9,7 @@ import Typerwriter from 'typewriter-effect';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Paper } from '@mui/material';
-import TypescriptImg from "../../assets/Typescript.png";
-import JavascriptImg from "../../assets/Javascript.png";
-import CPPImg from "../../assets/CPP.png";
-import MySQLImg from "../../assets/MySQL.png";
-import NextJSImg from "../../assets/NextJS.png";
-import ReactImg from "../../assets/React.png";
+import { TypescriptImg, JavascriptImg, CPPImg, MySQLImg, NextJSImg, ReactImg } from '../../assets';
 import './Home.scss';
 
 const Home = () => {
@@ -31,8 +26,8 @@ const Home = () => {
     <div className='home'>
       <div className='container' >
         <Grid2 className='description'>
-          <Typography variant='h4' className="name" >Hello there! My name is</Typography>
-          <Typography variant='h1' className="name" style={{ fontFamily: "cursive", fontStyle: "italic", paddingBottom: "2.5rem" }}>Huy Vo</Typography>
+          <Typography variant='h4' style={{fontFamily:'Manrope'}} >Hello there! My name is</Typography>
+          <Typography variant='h1' style={{ fontFamily: "Dancing Script", fontStyle: "italic", paddingBottom: "2.5rem" }}>Huy Vo</Typography>
           <Typography variant='h5' className="desc">
             I&apos;m a&nbsp;
             <div className="typewriter" style={{ color: "cyan" }} >
@@ -69,7 +64,7 @@ const Home = () => {
                 items.map((item, i) => (
                   <Paper className="carousel-card" key={i} elevation={3} >
                     <img className="carousel-img" src={item.img} style={{ width: "150px", height: "150px", margin: "auto" }}></img>
-                    <Typography variant='h6' style={{ color: "snow" }}>{item.name}</Typography>
+                    <Typography variant='h6' style={{ color: "snow", fontFamily:'Manrope', fontSize: '16px'}}>{item.name}</Typography>
 
                   </Paper>
                 ))

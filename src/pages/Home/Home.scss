@@ -6,7 +6,6 @@
     min-height: 100%;
     width: 100%;
     margin: 0;
-
     .container {
         display: flex;
         flex-direction: row;
@@ -18,9 +17,8 @@
         .description {
             //background-color: rgb(49, 49, 49);
             padding: 100px;
-
             .desc {
-                font-family: 'Roboto', sans-serif;
+                font-family: Manrope;
                 display: inline-flex;
                 justify-content: space-between;
                 padding-top: 1.5rem;
@@ -52,7 +50,7 @@
 
                 .carousel-card {
                     padding: 10px;
-                    background-color: rgba(19, 19, 19, 0.288);
+                    background-color: rgba(46, 46, 46, 0.521);
 
                 }
             }

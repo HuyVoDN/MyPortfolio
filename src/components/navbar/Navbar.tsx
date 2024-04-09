@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import Button from '@mui/material/Button';
+import CalisthenicsIcon from '../../assets/street.png';
 import './Navbar.scss';
 const Navbar = () => {
 
@@ -9,7 +10,7 @@ const Navbar = () => {
   const toggleDarkMode = (checked: boolean) => { setIsDarkMode(checked) };
   return (
     <div className="main-navbar">
-      <Link className='icon' to='/'>Huy Vo</Link>
+      <a className='icon-link' href='/'><img src={CalisthenicsIcon} className='icon-img'></img></a>
       <div className="main-navbar-right">
         <nav className='navbar-links'>
           <NavLink className='link' to='/about'>
@@ -28,13 +29,6 @@ const Navbar = () => {
             <Button className='link-btn' variant='contained'>Calisthenics</Button>
           </NavLink>
 
-
-
-          {/* <Button className='link-btn' variant='contained'><NavLink className= 'link' to='/about'>About</NavLink></Button>
-          <Button className='link-btn' variant='contained'><NavLink className= 'link' to='/projects'>Projects</NavLink></Button>
-          <Button className='link-btn' variant='contained'><NavLink className= 'link' to='/education'>Education</NavLink></Button>
-          <Button className='link-btn' variant='contained'><NavLink className= 'link' to='/skills'>Skills</NavLink></Button>
-          <Button className='link-btn' variant='contained'><NavLink className= 'link' to='/calisthenics'>Calisthenics</NavLink></Button> */}
         </nav>
       </div>
       <div className="dark-light-toggle">

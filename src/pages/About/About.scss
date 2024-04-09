@@ -6,7 +6,9 @@
     min-height: 100%;
     width: 100%;
     margin: 0 auto;
-    
+    .title{
+        font-family: Ubuntu;
+    }
     .container 
     {
         margin: auto;
@@ -14,13 +16,28 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-top: 100px;
+        margin-top: 75px;
         gap: 100px;
         .me-para p{
             font-size: 1.4rem;
             text-align: justify;
             line-height: 1.5;
             max-width: 800px;
+            b{
+                color:rgb(255, 255, 255);
+                text-shadow: 2px 2px 4px rgb(190, 190, 190);
+            }
+        }
+        
+        .img-carousel {
+            width: 500px;
+            justify-content: center;
+
+            .carousel {
+                border-radius: 5px;
+                box-shadow: 4px 2px 5px 1px rgba(255, 255, 255, 0.342);
+            }
+
         }
     }
 
