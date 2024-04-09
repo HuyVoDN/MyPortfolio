@@ -2,7 +2,7 @@ import { Grid, Typography } from '@mui/material';
 import "./About.scss";
 import {HS, FL, Dope, Wtf } from '../../assets';
 import { Carousel } from 'react-responsive-carousel';
-
+import {Fade} from 'react-awesome-reveal';
 const About = () => {
   const carouselItems = [
     { name: 'Handstand', img: HS },
@@ -13,7 +13,9 @@ const About = () => {
   return (
 
     <div className="about">
+      <Fade>
       <Typography variant='h4' className="title">About</Typography>
+      
       <div className='container'>
         <Grid className='me-para'>
           <p>My name is Huy Vo. I'm currently a student at the University of Houston, pursuing a Bachelor's in Computer Science.</p>
@@ -22,7 +24,7 @@ const About = () => {
           <p>This year, I will achieve the <b>Handstand</b>, the <b>Handstand Push-Up</b> and the full <b>Front Lever</b>.</p>
         </Grid>
         <Grid className='img-carousel'>
-          <Carousel className="carousel" transitionTime={400} dynamicHeight={true} showArrows={false} showIndicators={false} infiniteLoop={true} autoPlay={true} showStatus={false} showThumbs={false}>
+          <Carousel className="carousel" transitionTime={250} dynamicHeight={true} showArrows={false} showIndicators={false} infiniteLoop={true} autoPlay={true} showStatus={false} showThumbs={false}>
             {
               carouselItems.map((item) => (
                 <img src={item.img} 
@@ -34,8 +36,9 @@ const About = () => {
 
 
       </div>
-
+      </Fade>
     </div>
+    
 
   )
 }

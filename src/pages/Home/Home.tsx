@@ -10,6 +10,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Paper } from '@mui/material';
 import { TypescriptImg, JavascriptImg, CPPImg, MySQLImg, NextJSImg, ReactImg } from '../../assets';
+import {Fade} from 'react-awesome-reveal';
 import './Home.scss';
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='container' >
+        <Fade triggerOnce >
         <Grid2 className='description'>
           <Typography variant='h4' style={{fontFamily:'Manrope'}} >Hello there! My name is</Typography>
           <Typography variant='h1' style={{ fontFamily: "Dancing Script", fontStyle: "italic", paddingBottom: "2.5rem" }}>Huy Vo</Typography>
@@ -72,6 +74,7 @@ const Home = () => {
             </Carousel>
           </div>
         </Grid2>
+        </Fade>
       </div>
     </div>
   )
