@@ -4,10 +4,17 @@ import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import Button from '@mui/material/Button';
 import CalisthenicsIcon from '../../assets/street.png';
 import './Navbar.scss';
-const Navbar = () => {
 
-  const [isDarkMode, setIsDarkMode] = useState(() => true);
-  const toggleDarkMode = (checked: boolean) => { setIsDarkMode(checked) };
+export const Navbar = () => {
+
+  const [isDarkMode, setIsDarkMode] = useState(() => true); // i guess by default it's dark mode, then switch to light
+  const toggleSwitchMode = (checked: boolean) => { setIsDarkMode(checked) 
+    if (!checked) {
+      document.body.classList.add('light-mode');
+    } else {
+      document.body.classList.remove('light-mode');
+    }
+  };
   return (
     <div className="main-navbar">
       <a className='icon-link' href='/'><img src={CalisthenicsIcon} className='icon-img'></img></a>
@@ -34,7 +41,7 @@ const Navbar = () => {
       <div className="dark-light-toggle">
         <DarkModeSwitch className='switch-btn'
           checked={isDarkMode}
-          onChange={toggleDarkMode} />
+          onChange={toggleSwitchMode} />
       </div>
     </div>
   )

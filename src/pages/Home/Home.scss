@@ -6,6 +6,7 @@
     min-height: 100%;
     width: 100%;
     margin: 0;
+
     .container {
         display: flex;
         flex-direction: row;
@@ -17,11 +18,17 @@
         .description {
             //background-color: rgb(49, 49, 49);
             padding: 100px;
+
             .desc {
                 font-family: Manrope;
                 display: inline-flex;
                 justify-content: space-between;
                 padding-top: 1.5rem;
+
+                .typewriter {
+                    color: cyan;
+                    transition: color 0.5s ease-in-out;
+                }
             }
 
             .socials {
@@ -51,8 +58,60 @@
                 .carousel-card {
                     padding: 10px;
                     background-color: rgba(46, 46, 46, 0.521);
+                    transition: background-color 0.5s ease-in-out;
+
+                    .carousel-title {
+                        color: snow;
+                        font-family: 'Manrope';
+                        font-size: '16px';
+                        transition: color 0.5s ease-in-out;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+body.light-mode {
+    .home {
+        .container {
+            .description {
+                .desc {
+                    .typewriter {
+                        color: rgb(255, 115, 0);
+                        transition: color 0.5s ease-in-out;
+                    }
 
                 }
+
+                .socials {
+
+                    .links .icon {
+                        fill: rgb(0, 0, 0);
+                        transition: fill 0.3s ease-in-out;
+
+                        &:hover {
+                            fill: rgb(255, 115, 0);
+                        }
+                    }
+                }
+            }
+
+            .carousel-grid {
+                .carousel {
+                    .carousel-card {
+                        background-color: rgba(248, 248, 248, 0.595);
+                        transition: background-color 0.5s ease-in-out;
+
+                        .carousel-title {
+                            color: black;
+                            transition: color 0.5s ease-in-out;
+                        }
+                    }
+                }
+
             }
 
         }

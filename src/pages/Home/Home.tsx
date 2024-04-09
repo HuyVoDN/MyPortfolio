@@ -32,7 +32,7 @@ const Home = () => {
           <Typography variant='h1' style={{ fontFamily: "Dancing Script", fontStyle: "italic", paddingBottom: "2.5rem" }}>Huy Vo</Typography>
           <Typography variant='h5' className="desc">
             I&apos;m a&nbsp;
-            <div className="typewriter" style={{ color: "cyan" }} >
+            <div className="typewriter"  >
               <Typerwriter options={{
                 loop: true,
                 autoStart: true,
@@ -64,9 +64,9 @@ const Home = () => {
             <Carousel className="carousel" showIndicators={false} infiniteLoop={true} autoPlay={true} showStatus={false} showThumbs={false}>
               {
                 items.map((item, i) => (
-                  <Paper className="carousel-card" key={i} elevation={3} >
+                  <Paper className="carousel-card" key={i} elevation={2} >
                     <img className="carousel-img" src={item.img} style={{ width: "150px", height: "150px", margin: "auto" }}></img>
-                    <Typography variant='h6' style={{ color: "snow", fontFamily:'Manrope', fontSize: '16px'}}>{item.name}</Typography>
+                    <Typography className="carousel-title"variant='h6'>{item.name}</Typography>
 
                   </Paper>
                 ))

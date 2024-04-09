@@ -1,16 +1,16 @@
-.about 
-{
-    display:flex;
+.about {
+    display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100%;
     width: 100%;
     margin: 0 auto;
-    .title{
+
+    .title {
         font-family: Ubuntu;
     }
-    .container 
-    {
+
+    .container {
         margin: auto;
         display: flex;
         flex-direction: row;
@@ -18,17 +18,20 @@
         justify-content: center;
         margin-top: 75px;
         gap: 100px;
-        .me-para p{
+
+        .me-para p {
             font-size: 1.4rem;
             text-align: justify;
             line-height: 1.5;
             max-width: 800px;
-            b{
-                color:rgb(255, 255, 255);
+
+            b {
+                color: rgb(255, 255, 255);
                 text-shadow: 2px 2px 4px rgb(190, 190, 190);
+                transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
             }
         }
-        
+
         .img-carousel {
             width: 500px;
             justify-content: center;
@@ -36,9 +39,32 @@
             .carousel {
                 border-radius: 5px;
                 box-shadow: 4px 2px 5px 1px rgba(255, 255, 255, 0.342);
+                transition: box-shadow 0.5s ease-in-out;
             }
 
         }
     }
 
+}
+
+body.light-mode {
+    .about {
+        .container {
+            .me-para p {
+                b {
+                    color: black;
+                    text-shadow: 2px 2px 4px rgb(134, 134, 134);
+                    transition: color 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+                }
+            }
+
+            .img-carousel {
+                .carousel {
+                    box-shadow: 4px 2px 5px 1px rgba(6, 6, 6, 0.342);
+                    transition: box-shadow 0.5s ease-in-out;
+                }
+
+            }
+        }
+    }
 }
