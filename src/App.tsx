@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/navbar/Navbar.tsx';
 import './App.scss';
-import About from './pages/About/About';
-import Projects from './pages/Projects';
+import About from './pages/About/About.tsx';
+import Projects from './pages/Projects/Projects.tsx';
 import Education from './pages/Education';
 import Skills from './pages/Skills';
 import Calisthenics from './pages/Calisthenics';
