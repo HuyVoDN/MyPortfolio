@@ -24,7 +24,7 @@ const About = () => {
           <p>This year, I will achieve the <b>Handstand</b>, the <b>Handstand Push-Up</b> and the full <b>Front Lever</b>.</p>
         </Grid>
         <Grid className='img-carousel'>
-          <Carousel className="carousel" transitionTime={250} dynamicHeight={true} showArrows={false} showIndicators={false} infiniteLoop={true} autoPlay={true} showStatus={false} showThumbs={false}>
+          <Carousel className="carousel" transitionTime={250} dynamicHeight={true} showArrows={false} showIndicators={true} infiniteLoop={true} autoPlay={true} showStatus={false} showThumbs={false}>
             {
               carouselItems.map((item) => (
                 <img src={item.img} 

@@ -1,5 +1,6 @@
 import { Fade } from 'react-awesome-reveal';
 import { Typography } from '@mui/material';
+import Timeline from '../../components/Timeline/Timeline';
 // import { useEffect, useState } from 'react';
 import "./Projects.scss";
 
@@ -23,7 +24,7 @@ const Projects = () => {
         <Typography variant='h4' className="title">Projects</Typography>
 
         <div className='container'>
-       
+       <Timeline></Timeline>
         </div>
       </Fade>
 
