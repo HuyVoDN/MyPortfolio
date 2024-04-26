@@ -4,10 +4,17 @@
     position:relative;
 }
 .timeline-container::after {
-    background-color: #e17b77;
+    background-color: #00f7ff;
     content: '';
     position: absolute;
     left: calc(50% - 2px);
     width: 4px;
     height: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+body.light-mode{
+    .timeline-container::after{
+        background-color: #ff4000;
+        transition: background-color 0.3s ease-in-out;
+    }
 }

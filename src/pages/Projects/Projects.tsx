@@ -23,7 +23,7 @@ const Projects = () => {
       <Fade>
         <Typography variant='h4' className="title">Projects</Typography>
 
-        <div className='container'>
+        <div className='projects-container'>
        <Timeline></Timeline>
         </div>
       </Fade>

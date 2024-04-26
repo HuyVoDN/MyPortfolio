@@ -6,9 +6,10 @@
     margin: 10px 0;
     width: 50%;
     .timeline-item-content {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 5px rgba(155, 155, 155, 0.584);
+        color: rgb(255, 255, 255);
+        background-color: rgb(62, 62, 62);
         border-radius: 5px;
-        background-color: #fff;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -50,23 +51,30 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            a{
+            .link{
                 font-size: 14px;
+                color:rgb(255, 255, 255);
                 font-weight: bold;
                 text-decoration: none;
+                transition: color 0.20s ease-in-out;
+                &:hover{
+                    color: rgb(0, 0, 0);
+                }
             }
-            a::after{
+            .link::after{
                 content: ' ►';
                 font-size:12px;
             }
+           
+
         }
        &:hover{
-        background-color: grey;
-        color: white;
+        background-color: rgb(82, 82, 82);
+        color: rgb(255, 255, 255);
        }
        &::after{
         content: ' ';
-        background-color: #fff;
+        background-color: rgb(62, 62, 62);
         box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2);
         position: absolute;
         right: -7.5px;
@@ -78,12 +86,12 @@
     
        }
        &:hover::after{
-        background-color: grey;
+        background-color: rgb(82, 82, 82);
        }
     }
     .circle{
         background-color: #fff;
-        border: 3px solid #e17b77;
+        border: 3px solid #00f7ff;
         border-radius: 50%;
         position: absolute;
         top: calc(50% - 14px);
@@ -91,6 +99,7 @@
         width: 20px;
         height: 20px;
         z-index: 100;
+        transition: border 0.3s ease-in-out;
     }
   
     
@@ -110,10 +119,12 @@
             left:auto;
             right: 5px;
         }
+       
         .circle {
             right: auto;
             left: -40px;
         }
+        
     }
     .timeline-item-content::after {
         right: auto;
@@ -121,16 +132,39 @@
         box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
     }
     .circle{
-        background-color: #fff;
-        border: 3px solid #e17b77;
-        border-radius: 50%;
-        position: absolute;
         top: calc(50% - 10px);
         left:17px;
-        width: 20px;
-        height: 20px;
-        z-index: 100;
     }
   
 }
-
+body.light-mode{
+    .timeline-item{
+        .timeline-item-content{
+            color:black;
+            background-color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.515);
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+            &:hover{
+                background-color: rgb(201, 200, 200);
+            }
+            &::after{
+                background-color: rgb(255, 255, 255);
+                transition: background-color 0.3s ease-in-out;
+               }
+            &:hover::after{
+                background-color: rgb(201, 200, 200);
+            }
+            .link{
+                color:black;
+                &:hover{
+                    color:white;
+                }
+            }
+          
+        }
+        .circle{
+            border: 3px solid #ff4000;
+            transition: 0.3s border ease-in-out;
+        }
+    }
+}

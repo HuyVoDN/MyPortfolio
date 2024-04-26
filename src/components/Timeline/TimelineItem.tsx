@@ -3,6 +3,7 @@ import "./TimelineItem.scss";
 interface Link {
     githubLink: string;
     demoLink: string;
+    color: string;
 }
 
 interface Category {
@@ -39,6 +40,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ data }) => (
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link"
+                    // style={{ color: data.link.color}}
                 >
                    GitHub
                 </a>
@@ -49,6 +51,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ data }) => (
                     target="_blank"
                     rel="noopener noreferrer"
                     className="link"
+                    // style={{ color: data.link.color }}
                 >
                    Demo
                 </a>

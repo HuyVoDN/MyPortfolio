@@ -11,6 +11,7 @@ export const TimelineElements = [
         link: {
             githubLink: "https://github.com/HuyVoDN/OptiFuelForecast",
             demoLink: "https://optifuel-forecast.vercel.app/",  
+            color: "blue",
         }
     },
     {
@@ -25,6 +26,7 @@ export const TimelineElements = [
         link: {
             githubLink: "https://github.com/HuyVoDN/Blog-App",
             demoLink: "",
+            color:"black",
         }
     },
     

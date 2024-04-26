@@ -67,9 +67,9 @@
                 }
 
                 .link-btn:hover {
-                    background-color: rgba(190, 190, 190, 0.144);
-                    color: rgb(173, 173, 173);
-                    box-shadow: 0px 0px 3px 1px rgba(180, 180, 180, 0.699);
+                    background-color: rgb(85, 85, 85);
+                    color: rgb(23, 23, 23);
+                    box-shadow: 0px 0px 3px 1px rgba(227, 227, 227, 0.699);
                 }
             }
 
@@ -133,14 +133,14 @@ body.light-mode {
                 }
 
                 .link-btn:hover {
-                    background-color: rgba(44, 44, 44, 0.144);
+                    background-color: rgb(44, 44, 44);
                     color: rgb(255, 255, 255);
                     box-shadow: 0px 0px 3px 1px rgba(43, 43, 43, 0.975);
                 }
                 
             }
             .link.active .link-btn {
-                background-color: rgba(121, 121, 121, 0.877);
+                background-color: rgba(52, 52, 52, 0.877);
                 color: rgb(248, 248, 248);
                 box-shadow: 5px 5px 3px 1px rgba(65, 65, 65, 0.699);
             }

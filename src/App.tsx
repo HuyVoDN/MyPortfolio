@@ -7,12 +7,14 @@ import Education from './pages/Education';
 import Skills from './pages/Skills';
 import Calisthenics from './pages/Calisthenics';
 import Home from './pages/Home/Home';
+import Footer from './components/Footer/Footer.tsx';
 
 const Layout = () => {
   return (
     <>
       <Navbar />
       <Outlet />
+      <Footer />
     </>
   );
 
