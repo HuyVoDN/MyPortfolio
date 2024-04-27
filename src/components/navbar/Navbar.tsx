@@ -26,8 +26,8 @@ export const Navbar = () => {
           <NavLink className='link' to='/projects'>
             <Button className='link-btn' variant='contained'>Projects</Button>
           </NavLink>
-          <NavLink className='link' to='/education'>
-            <Button className='link-btn' variant='contained'>Education</Button>
+          <NavLink className='link' to='/experience'>
+            <Button className='link-btn' variant='contained'>Experience</Button>
           </NavLink>
           <NavLink className='link' to='/skills'>
             <Button className='link-btn' variant='contained'>Skills</Button>

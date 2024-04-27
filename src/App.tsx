@@ -3,12 +3,12 @@ import Navbar from './components/navbar/Navbar.tsx';
 import './App.scss';
 import About from './pages/About/About.tsx';
 import Projects from './pages/Projects/Projects.tsx';
-import Education from './pages/Education';
-import Skills from './pages/Skills';
+import Skills from './pages/Skills/Skills.tsx';
 import Calisthenics from './pages/Calisthenics';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer.tsx';
-
+import Experience from './pages/Experience.tsx';
+import NotFound from './pages/NotFound.tsx';
 const Layout = () => {
   return (
     <>
@@ -37,8 +37,8 @@ const router = createBrowserRouter([
         element: <Projects />
       },
       {
-        path: "/education",
-        element: <Education />
+        path: "/experience",
+        element: <Experience />
       },
       {
         path: "/skills",
@@ -48,8 +48,12 @@ const router = createBrowserRouter([
       {
         path: "/calisthenics",
         element: <Calisthenics />
-      }
+      },
 
+      {
+        path: "*",
+        element: <NotFound/>
+      },
     ]
   }
 ]);

@@ -1,0 +1,13 @@
+export const JSbg = 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png';
+export const TSbg = 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fbq5nm2vl3thxju1l5y24.png';
+export const Cppbg = 'https://media.licdn.com/dms/image/D4E12AQFZ22tCQSGwDw/article-cover_image-shrink_600_2000/0/1687615910475?e=2147483647&v=beta&t=e0Dz4ia72MRYikHW_0Pc0JoAKJ3sFH3Vd5VO1RyAFPs';
+export const Reactbg = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/270px-React-icon.svg.png';
+export const MySQLbg = 'https://static-00.iconduck.com/assets.00/database-mysql-icon-462x512-6itsq0zm.png';
+export const Expressbg = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8-UcEjuu3AwR77ZjceWzpeSsZCdGUa4YFc6KvA-7YHA&s';
+export const Pythonbg = 'https://cdn.iconscout.com/icon/free/png-256/python-3521655-2945099.png';
+export const CSharpbg = 'https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png';
+export const Koitlinbg = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png';
+export const Postmanbg = 'https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png';
+export const Gitbg = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png';
+export const VSCodebg = 'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png';
+export const MySQLWorkbenchbg = 'https://static-00.iconduck.com/assets.00/mysqlworkbench-icon-1024x1014-nnvsz83e.png';

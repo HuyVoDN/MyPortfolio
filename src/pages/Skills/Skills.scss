@@ -1,0 +1,269 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .title {
+        font-family: Ubuntu;
+        margin-bottom: 4rem;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        min-width: 1280px;
+
+        .searchbar {
+            margin-bottom: 2rem;
+            font-size: 20px;
+            height: 50px;
+            min-width: 1280px;
+            padding: 0 20px;
+            border: 1px solid rgb(99, 99, 99);
+            color: white;
+            border-radius: 28px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: rgba(46, 46, 46, 0.486);
+            }
+
+            &:focus {
+                background-color: rgba(49, 49, 49, 0.486);
+            }
+        }
+
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            
+            .skill-category {
+                margin-top: 2rem;
+                .category-name {
+                    font-size: 30px;
+                    text-align: left;
+                    margin-bottom: 1rem;
+                    font-weight: bold;
+                    font-family: Manrope;
+                    color: white;
+                    transition: color 0.3s ease-in-out;
+                }
+
+                .skills-list-item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-bottom: 1.5rem;
+                    max-width: 100%;
+            
+                    .skill-item-card {
+                        width: 320px;
+                        height: 80px;
+                        margin-top:20px;
+                        margin-right: 20px;
+                        border-radius: 20px;
+                        color:rgb(255, 255, 255);
+                        transition: color 0.05s ease-in-out, transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out;
+                     
+                        border: 1px solid rgb(99, 99, 99);
+
+                        .card-title {
+                            font-size: 18px;
+                            display: flex;
+                            margin: 25px 20px;
+                            justify-content: flex-start;
+                            align-items: center;
+                            transition: all 0.15s ease-in-out;
+                        }
+
+                        &:hover {
+                            transform: scale(1.05);
+                            color: rgb(22, 22, 22);
+                            box-shadow: 0 0px 10px rgba(163, 163, 163, 0.705);
+
+                            
+                        }
+                    }
+
+                    .js {
+                        background-size: 50%;
+                        background-position: top 85% left 100%;
+                        background-repeat: no-repeat;
+                        transition: all 0.15s ease-in-out;
+
+                        &:hover {
+                            background-color: rgba(255, 255, 0, 0.493);
+                        }
+
+                    }
+
+                    .ts {
+                        background-size: 60%;
+                        background-position: top 60% left 100%;
+                        background-repeat: no-repeat;
+                        
+
+
+                        &:hover {
+                            background-color: rgba(0, 238, 255, 0.493);
+                        }
+                    }
+
+                    .cpp {
+                        background-size: 50%;
+                        background-position: top 50% left 110%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(0, 153, 255, 0.493);
+                        }
+                    }
+
+                    .react {
+                        background-size: 40%;
+                        background-position: top 50% left 100%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(0, 255, 255, 0.493);
+                        }
+                    }
+                    .sql{
+                        background-size: 60%;
+                        background-position: top 60% left 120%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(255, 123, 0, 0.589);
+                        }
+                    
+                    }
+                    .express{
+                        background-size: 60%;
+                        background-position: top 50% left 110%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(170, 170, 170, 0.767);
+                        }
+                    }
+                    .python{
+                        background-size: 46%;
+                        background-position: top 30% left 100%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(255, 166, 0, 0.623);
+                        }
+                    }
+                    .csharp{
+                        background-size: 60%;
+                        background-position: top 50% left 110%;
+                        background-repeat: no-repeat;
+                        color: white;
+                        &:hover {
+                            background-color: rgba(101, 0, 160, 0.596);
+                            color: rgb(146, 146, 146);
+                        }
+                    
+                    }
+                    .kotlin{
+                        background-size: 40%;
+                        background-position: top 50% left 100%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(98, 0, 255, 0.575);
+                            color: rgb(180, 180, 180);
+                        }
+                    
+                    }
+                    .mysqlworkbench{
+                        background-size: 50%;
+                        background-position: top 20% left 110%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(0, 119, 255, 0.575);
+                        }
+                    
+                    }
+                    .postman{
+                        background-size: 50%;
+                        background-position: top 30% left 110%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(255, 136, 0, 0.555);
+                        }
+                    
+                    }
+                    .vscode{
+                        background-size: 50%;
+                        background-position: top 50% left 106%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(0, 119, 255, 0.575);
+                           
+                        }
+                    
+                    
+                    }
+                    .git{
+                        background-size: 40%;
+                        background-position: top 50% left 100%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(255, 0, 0, 0.575);
+                           
+                        }
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+
+body.light-mode {
+    .skills {
+        .skills-container {
+            .searchbar {
+                background-color: transparent;
+                color: black;
+
+                &:hover {
+                    background-color: rgba(224, 224, 224, 0.486);
+                }
+
+                &:focus {
+                    background-color: rgba(209, 209, 209, 0.486);
+                }
+            }
+
+                .skills-list {
+                    .skill-category {
+                        
+                        .category-name {
+                            color: black;
+                        }
+
+                        .skills-list-item {
+                            
+                            .skill-item-card {
+                                color: black;
+                                border: 1px solid rgb(99, 99, 99);
+                                &:hover{
+                                    color: rgb(92, 92, 92);
+                                }
+                            }
+                        }
+                    }
+                }
+            
+        }
+    }
+}

@@ -1,10 +1,10 @@
-const Education = () => {
+const Experience = () => {
   return (
     <div>
-      Education
+      Experience
       <p> Work in Progress...</p>
       </div>
   )
 }
 
-export default Education
+export default Experience
