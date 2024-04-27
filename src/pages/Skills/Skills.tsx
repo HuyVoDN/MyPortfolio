@@ -6,7 +6,7 @@ import { JSbg, TSbg, Cppbg, Reactbg, MySQLbg, Expressbg, Pythonbg, CSharpbg, Koi
 
 const Skills = () => {
 
-  const [skills, setSkills] = useState([
+  const skills = [
     { id: 1, category: 'Programming Languages', name: ['JavaScript', 'JS'], class: 'js', bg: JSbg },
     { id: 2, category: 'Programming Languages', name: ['TypeScript', 'TS'], class: 'ts', bg: TSbg },
     { id: 3, category: 'Programming Languages', name: ['C++', 'Cpp', 'C Plus Plus'], class: 'cpp', bg: Cppbg},
@@ -20,7 +20,7 @@ const Skills = () => {
     {id: 11, category: 'Technologies', name:'Postman', class: 'postman', bg: Postmanbg},
     {id: 12, category: 'Technologies', name:'VS Code', class: 'vscode', bg: VSCodebg},
     {id: 13, category: 'Technologies', name:'Git', class: 'git', bg: Gitbg}
-  ]);
+  ];
 
   const [search, setSearch] = useState('');
 
