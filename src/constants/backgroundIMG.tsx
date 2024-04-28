@@ -11,3 +11,4 @@ export const Postmanbg = 'https://static-00.iconduck.com/assets.00/postman-icon-
 export const Gitbg = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png';
 export const VSCodebg = 'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_vscode_icon_130084.png';
 export const MySQLWorkbenchbg = 'https://static-00.iconduck.com/assets.00/mysqlworkbench-icon-1024x1014-nnvsz83e.png';
+export const Vergilbg = 'https://cdn.capcom-unity.com/2020/09/DMC5SE_Vergil02-1024x576.jpg';

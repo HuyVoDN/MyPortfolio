@@ -222,6 +222,25 @@
                         }
                     
                     }
+                 .eastereggs{
+                    &:hover{
+                        color:white;
+                        background-color: beige;
+                    }
+                 } 
+                 .vergil{
+                  
+                    background-size: 90%;
+                    background-position: top 65% left 280%;
+                    background-repeat: no-repeat;
+                    font-family: serif;
+
+                    &:hover {
+                        background-color: rgba(140, 0, 255, 0.637);
+                      color:white;
+                       
+                    }
+                 }
                 }
             }
         }
