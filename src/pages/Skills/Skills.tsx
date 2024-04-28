@@ -105,7 +105,7 @@ const Skills = () => {
                         ))}
                     </div>
                   </div>
-                  {
+                  { // check for if the term is being searched or not then renders eastereggs category
                     eastereggsSearch && eastereggs.length > 0 && (
                       <div className="skill-category">
                         <Typography className="category-name" variant='h5'>Eastereggs</Typography>
