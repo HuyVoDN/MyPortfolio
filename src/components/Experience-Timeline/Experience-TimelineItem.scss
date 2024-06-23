@@ -1,0 +1,68 @@
+.experience-timeline-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+ 
+    .timeline-item-content{
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        background-color:rgb(82, 82, 82);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(158, 158, 158, 0.418);
+        width:35%;
+        height:300px;
+        transition: background-color 0.5s ease-in-out;
+        h2{
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            margin-top: 1.5rem;
+            transition: color 0.5s ease-in-out;
+           
+        }
+        h3{
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #fff;
+            margin-top:0px;
+            margin-bottom: 1rem;
+            transition: color 0.5s ease-in-out;
+            
+        }
+        .tag{
+            position: absolute;
+            display:flex;
+            justify-content: flex-end;
+            top: 0;
+            right: 0;
+            align-items: right;
+            border-radius: 0 0.5rem 0 0;
+            padding: 0.3rem;
+            transition: color 0.5s ease-in-out;
+        }
+        .date-location{
+            display:flex;
+            justify-content: center;
+            gap:4rem;
+        }
+
+    }
+}
+body.light-mode{
+    .experience-timeline-item{
+     
+        .timeline-item-content{
+            background-color:rgb(255, 255, 255);      
+            box-shadow: 0 0 10px rgba(20, 20, 20, 0.418);
+            h2{
+                color: #000;      
+            }
+            h3{
+                color: #000;    
+            }
+        }
+    }
+}

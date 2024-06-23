@@ -2,14 +2,14 @@ import { Fade, Slide } from 'react-awesome-reveal';
 import { Typography } from '@mui/material';
 import { useState } from 'react';
 import "./Skills.scss";
-import { JSbg, TSbg, Cppbg, Reactbg, MySQLbg, Expressbg, Pythonbg, CSharpbg, Koitlinbg, Postmanbg, Gitbg, VSCodebg, MySQLWorkbenchbg, Vergilbg } from '../../constants/backgroundIMG';
+import { JSbg, TSbg, CPPbg, Reactbg, MySQLbg, Expressbg, Pythonbg, CSharpbg, Koitlinbg, Postmanbg, Gitbg, VSCodebg, MySQLWorkbenchbg, Vergilbg } from '../../constants/backgroundIMG';
 
 const Skills = () => {
 
   const skills = [
     { id: 1, category: 'Programming Languages', name: ['JavaScript', 'JS'], class: 'js', bg: JSbg },
     { id: 2, category: 'Programming Languages', name: ['TypeScript', 'TS'], class: 'ts', bg: TSbg },
-    { id: 3, category: 'Programming Languages', name: ['C++', 'Cpp', 'C Plus Plus'], class: 'cpp', bg: Cppbg },
+    { id: 3, category: 'Programming Languages', name: ['C++', 'Cpp', 'C Plus Plus'], class: 'cpp', bg: CPPbg },
     { id: 4, category: 'Programming Languages', name: ['Python', 'Py'], class: 'python', bg: Pythonbg },
     { id: 5, category: 'Programming Languages', name: ['MySQL', 'Squeal'], class: 'sql', bg: MySQLbg },
     { id: 6, category: 'Libraries', name: 'React', class: 'react', bg: Reactbg },
@@ -21,7 +21,7 @@ const Skills = () => {
     { id: 12, category: 'Technologies', name: 'VS Code', class: 'vscode', bg: VSCodebg },
     { id: 13, category: 'Technologies', name: 'Git', class: 'git', bg: Gitbg },
     { id: 14, category: 'Eastereggs', name: ['4 Plates Weighted Dip','calisthenics'], class: 'eastereggs' },
-    { id: 15 , category: 'Eastereggs', name: ['3 plates Weighted Pull Up','calisthenics'], class: 'eastereggs'},
+    { id: 15, category: 'Eastereggs', name: ['3 plates Weighted Pull Up','calisthenics'], class: 'eastereggs'},
     { id: 16, category: 'Eastereggs', name: ['Vergil', 'The Omega and the Alpha', 'Dark Slayer'], class: 'vergil', bg: Vergilbg},
   ];
 

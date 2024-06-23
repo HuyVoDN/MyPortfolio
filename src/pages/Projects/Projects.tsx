@@ -1,6 +1,6 @@
 import { Fade } from 'react-awesome-reveal';
 import { Typography } from '@mui/material';
-import Timeline from '../../components/Timeline/Timeline';
+import Timeline from '../../components/Projects-Timeline/Timeline';
 import "./Projects.scss";
 
 const Projects = () => {

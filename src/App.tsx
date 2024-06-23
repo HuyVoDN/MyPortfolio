@@ -4,10 +4,10 @@ import './App.scss';
 import About from './pages/About/About.tsx';
 import Projects from './pages/Projects/Projects.tsx';
 import Skills from './pages/Skills/Skills.tsx';
-import Calisthenics from './pages/Calisthenics';
+import Calisthenics from './pages/Calisthenics/Calisthenics.tsx';
 import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer.tsx';
-import Experience from './pages/Experience.tsx';
+import Experience from './pages/Experience/Experience.tsx';
 import NotFound from './pages/NotFound.tsx';
 const Layout = () => {
   return (
