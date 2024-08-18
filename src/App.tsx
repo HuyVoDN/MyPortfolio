@@ -9,6 +9,7 @@ import Home from './pages/Home/Home';
 import Footer from './components/Footer/Footer.tsx';
 import Experience from './pages/Experience/Experience.tsx';
 import NotFound from './pages/NotFound.tsx';
+
 const Layout = () => {
   return (
     <>
