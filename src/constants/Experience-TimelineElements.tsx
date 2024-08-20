@@ -1,16 +1,32 @@
 export const TimelineElements = [
+
     {
-        title: "Instructor",
+        title: "Academic Teaching Assistant",
         category:{
             tag:"Teaching Experience",
             color: "green",
             fontColor: "white",
         },
-        date: "05/2024 - PRESENT",
+        date: "01/2024 - PRESENT",
+        company: "UH - Computer Science Department",
+        location: "Houston, Texas",
+        jobDescription: "Assiting professors in class materials, grading, and exams.",
+        dateStarted: "01/2024",
+        
+    },
+
+    {
+        title: "Coding Instructor",
+        category:{
+            tag:"Teaching Experience",
+            color: "green",
+            fontColor: "white",
+        },
+        date: "04/2024 - PRESENT",
         company: "iCode SugarLand",
         location: "Houston, Texas",
-        jobDescription: "Teaching kids how to code in Python, Scratch, and Java. ",
-        dateStarted: "05/2024",
+        jobDescription: "Teaching kids how to code in Python, Scratch, and Java.",
+        dateStarted: "04/2024",
         
     },
 

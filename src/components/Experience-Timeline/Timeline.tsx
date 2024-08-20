@@ -1,4 +1,4 @@
-import { useState } from 'react'; // Import useState
+import { useState } from 'react'; 
 import { TimelineElements } from "../../constants/Experience-TimelineElements";
 import TimelineItem from "./TimelineItem";
 import "./Experience-Timeline.scss";
