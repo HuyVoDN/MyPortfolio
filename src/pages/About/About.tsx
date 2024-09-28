@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import "./About.scss";
-import {HS, FL, Dope, Wtf } from '../../assets';
+import {HS, FL, Dope, Wtf, TheBoysHackathon, Coder} from '../../assets';
 import { Carousel } from 'react-responsive-carousel';
 import {Fade} from 'react-awesome-reveal';
 const About = () => {
@@ -9,6 +9,9 @@ const About = () => {
     { name: 'Front Lever', img: FL },
     { name: 'Dope', img: Dope },
     { name: 'Wtf', img: Wtf },
+    { name: 'TheBoysHackathon', img : TheBoysHackathon},
+    { name: 'Coder', img: Coder }
+    
   ];
   return (
 

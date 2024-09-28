@@ -30,7 +30,7 @@ const Calisthenics = () => {
         <Typography variant='h4' className="title">Calisthenics</Typography>
       </Fade>
       <div className="calisthenics-container">
-       
+        <p> Work In Progress... </p>      
           <div className="skills-container">
 
           </div>
