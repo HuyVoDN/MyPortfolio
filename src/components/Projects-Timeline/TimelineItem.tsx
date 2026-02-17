@@ -1,9 +1,9 @@
 import React from 'react';
 import "./TimelineItem.scss";
 interface Link {
-    githubLink: string;
-    demoLink: string;
-    color: string;
+    githubLink?: string;
+    demoLink?: string;
+    color?: string;
 }
 
 interface Category {
@@ -16,8 +16,8 @@ interface TimelineElement {
     category: Category;
     date: string;
     subTitle: string;
-    description: string;
-    link: Link;
+    
+    link?: Link;
 }
 
 interface TimelineItemProps {
@@ -45,7 +45,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ data }) => (
                    GitHub
                 </a>
             )}
-            {data.link.demoLink && ( 
+            {data.link?.demoLink && ( 
                 <a
                     href={data.link.demoLink}
                     target="_blank"

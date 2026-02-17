@@ -9,7 +9,7 @@ import Typerwriter from 'typewriter-effect';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Paper } from '@mui/material';
-import { TypescriptImg, JavascriptImg, CPPImg, MySQLImg, NextJSImg, ReactImg } from '../../assets';
+import { TypescriptImg, JavascriptImg, CPPImg, MySQLImg, NextJSImg, ReactImg, CSharpImg } from '../../assets';
 import {Fade} from 'react-awesome-reveal';
 import './Home.scss';
 
@@ -18,10 +18,12 @@ const Home = () => {
   const items = [
     { name: 'JavaScript', img: JavascriptImg },
     { name: 'TypeScript', img: TypescriptImg },
+    { name: 'C#', img: CSharpImg},
     { name: 'React', img: ReactImg },
     { name: 'NextJS', img: NextJSImg },
     { name: 'C++', img: CPPImg },
     { name: 'MySQL', img: MySQLImg }
+   
   ];
   return (
     <div className='home'>
@@ -53,7 +55,7 @@ const Home = () => {
             <Link className='links' to='mailto:huy.businesscontact@gmail.com' title="My Email" >
               <EmailIcon className='icon' />
             </Link>
-            <Link className='links' to='https://drive.google.com/file/d/1adiW-AXqRRLpuCI20o3JEt-eO1mST6h1/view?usp=sharing' target="_blank" title="My Resume" >
+            <Link className='links' to='https://drive.google.com/file/d/1wejl-4ycRRleBTngDR1i7fso1ecmYXjY/view?usp=drive_link' target="_blank" title="My Resume" >
               <ArticleIcon className='icon' />
             </Link>
           </div>

@@ -11,3 +11,7 @@ export { default as Dope } from './About/dope.jpg';
 export { default as Wtf } from './About/wtf.jpg';
 export { default as TheBoysHackathon } from './About/TheBoysHackathon.jpg';
 export { default as Coder } from './About/Coder.jpg';
+export { default as TheBoys } from './About/TheBoys.jpg';
+export { default as FightLab} from './About/FightLab.jpg';
+export {default as SingleLeg} from './About/SingleLeg.jpg';
+export {default as CSharpImg} from './CSharp.png';

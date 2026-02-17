@@ -2,7 +2,7 @@ import { Fade, Slide } from 'react-awesome-reveal';
 import { Typography } from '@mui/material';
 import { useState } from 'react';
 import "./Skills.scss";
-import { JSbg, TSbg, CPPbg, Reactbg, MySQLbg, Expressbg, Pythonbg, CSharpbg, Koitlinbg, Postmanbg, Gitbg, VSCodebg, MySQLWorkbenchbg, Vergilbg } from '../../constants/backgroundIMG';
+import { JSbg, TSbg, CPPbg, Reactbg, MySQLbg, Expressbg, Pythonbg, CSharpbg, Koitlinbg, Postmanbg, Gitbg, VSCodebg, MySQLWorkbenchbg, Vergilbg, Unitybg, PyTestbg } from '../../constants/backgroundIMG';
 
 const Skills = () => {
 
@@ -20,6 +20,8 @@ const Skills = () => {
     { id: 11, category: 'Technologies', name: 'Postman', class: 'postman', bg: Postmanbg },
     { id: 12, category: 'Technologies', name: 'VS Code', class: 'vscode', bg: VSCodebg },
     { id: 13, category: 'Technologies', name: 'Git', class: 'git', bg: Gitbg },
+    { id: 17, category: 'Technologies', name: 'Unity', class: 'unity', bg: Unitybg },
+    { id: 18, category: 'Technologies', name: 'PyTest', class: 'pytest', bg: PyTestbg },
     { id: 14, category: 'Eastereggs', name: ['4 Plates Weighted Dip','calisthenics'], class: 'eastereggs' },
     { id: 15, category: 'Eastereggs', name: ['3 plates Weighted Pull Up','calisthenics'], class: 'eastereggs'},
     { id: 16, category: 'Eastereggs', name: ['Vergil', 'The Omega and the Alpha', 'Dark Slayer'], class: 'vergil', bg: Vergilbg},
@@ -41,7 +43,7 @@ const Skills = () => {
   const technologies = filteredSkills.filter(skill => skill.category === 'Technologies');
 
   const eastereggs = filteredSkills.filter(skill => skill.category.toLowerCase() === 'eastereggs');
-  const eastereggsTerms = ['calisthenics', 'vergil','the omega and the alpha', 'dark slayer', 'pull up', 'dip'];
+  const eastereggsTerms = ['calisthenics', 'vergil', 'bury the light','the omega and the alpha', 'dark slayer', 'pull up', 'dip'];
   const eastereggsSearch = eastereggsTerms.includes(search.toLowerCase());
 
   return (

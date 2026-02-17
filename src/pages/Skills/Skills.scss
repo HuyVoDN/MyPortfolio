@@ -99,7 +99,7 @@
                     }
 
                     .ts {
-                        background-size: 60%;
+                        background-size: 50%;
                         background-position: top 60% left 100%;
                         background-repeat: no-repeat;
                         
@@ -169,7 +169,7 @@
                     
                     }
                     .kotlin{
-                        background-size: 40%;
+                        background-size: 50%;
                         background-position: top 50% left 100%;
                         background-repeat: no-repeat;
 
@@ -222,6 +222,26 @@
                         }
                     
                     }
+                    .unity {
+                        background-size: 60%;
+                        background-position: top 50% left 110%;
+                        background-repeat: no-repeat;
+
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.575);
+                           
+                        }
+                    }
+                    .pytest{
+                        background-size: 55%;
+                        background-position: top 50% left 110%;
+                        background-repeat: no-repeat;
+    
+                        &:hover {
+                            background-color: rgba(255, 0, 255, 0.575);
+                        
+                        }
+                    }
                  .eastereggs{
                     &:hover{
                         color:white;
@@ -241,6 +261,7 @@
                        
                     }
                  }
+                    
                 }
             }
         }
